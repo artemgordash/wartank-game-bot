@@ -1,12 +1,11 @@
 import express from 'express';
-import path from 'path';
 import initPuppeteer from './puppeteer/index';
 
 const app = express();
 const port = 3000;
 
 app.get('/', async (req, res) => {
-  res.sendFile('index.html', { root: path.join(__dirname, 'public') });
+  res.send('Hello world');
 });
 
 app.use(express.static('public'));
