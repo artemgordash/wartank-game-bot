@@ -9,7 +9,7 @@ app.get('/', async (req, res) => {
 });
 
 app.listen(port, () => {
-  initPuppeteer();
+  // initPuppeteer();
   console.log(`Server running at http://localhost:${port}\n\n`);
 });
 
