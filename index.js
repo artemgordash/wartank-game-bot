@@ -1,4 +1,5 @@
 import express from 'express';
+import initPuppeteer from './puppeteer';
 
 const app = express();
 const port = 3000;
