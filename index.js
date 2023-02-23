@@ -1,5 +1,4 @@
-import express from 'express';
-import initPuppeteer from './puppeteer/index';
+const express = require('express');
 
 const app = express();
 const port = 3000;
@@ -15,4 +14,4 @@ app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}\n\n`);
 });
 
-export default app;
+module.exports = app;
