@@ -5,7 +5,7 @@ import fight from './modules/fight';
 const initPuppeteer = async () => {
   console.log('start');
   const browser = await puppeteer.launch({
-    headless: false,
+    headless: true,
     args: [
       '--disable-web-security',
       '--disable-features=IsolateOrigins,site-per-process',
