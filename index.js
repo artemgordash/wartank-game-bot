@@ -2,7 +2,7 @@ import express from 'express';
 import initPuppeteer from './puppeteer';
 
 const app = express();
-const port = 3000;
+const PORT = 3000;
 
 app.get('/', async (req, res) => {
   res.send('Hello world');
@@ -10,9 +10,9 @@ app.get('/', async (req, res) => {
 
 app.use(express.static('public'));
 
-app.listen(port, () => {
+app.listen(PORT, () => {
   initPuppeteer();
-  console.log(`Server running at http://localhost:${port}\n\n`);
+  console.log(`Server running at http://localhost:${PORT}\n\n`);
 });
 
 module.exports = app;
